@@ -1,0 +1,134 @@
+.App
+{
+    text-align: center;
+}
+
+.App-header
+{
+    background-color: rgba(0,0,0,0.75);
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-logo
+{
+    animation: App-logo-spin infinite 20s linear;
+    height: 40px;
+}
+
+.App-title
+{
+    font-size: medium;
+}
+
+
+/*home.js*/
+.app-bottom
+{
+    padding: 20px;
+    text-align:left;
+}
+
+.app-bottom > div
+{
+    padding:10px;
+}
+
+.btn
+{
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right:10px;
+    transition: all 200ms ease-in-out;
+}
+.btn:hover
+{
+    background-color:black;
+    color: white;
+}
+
+
+.github-card-panel
+{
+    border: solid 1px rgba(0,0,0,0.2);
+    border-radius:6px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+
+.github-card
+{
+    border: solid 1px rgba(0,0,0,0.2);
+    border-radius:4px;
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.1);
+    flex: 0 0 250px;
+    font-size: 14px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    margin:14px;
+    height:100px;
+    transition: all 250ms ease-in-out;
+    cursor:pointer;
+}
+.github-card:hover,
+.github-card:focus
+{
+    border: solid 1px rgba(0,0,0,0.4);
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.github-card-left
+{
+/*    border: solid 1px red;*/
+    display:flex;
+    flex: 0 0 auto;
+    padding:0;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+.github-card-right
+{
+/*    border: solid 1px green;*/
+    display:flex;
+    flex-direction:column;
+    padding:5px;
+    font-size: 12px;
+    overflow:auto;
+}
+
+
+
+.github-card-left > a > img
+{
+    height:100px;
+}
+.github-card-right > div
+{
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+@keyframes App-logo-spin
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
